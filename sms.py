@@ -5,8 +5,8 @@ import africastalking
 class SMS:
 	def __init__(self):
 		# Set your app credentials
-		self.username = "Enter your username you get from the africas talking portal"
-		self.api_key = "Enter your api you generate from the africas talking portal"
+		self.username = "hairwayskenya"
+		self.api_key = "a9ba710b9ea204f778f73fcacd4570563098e68a66bf85e145eb8f4b8d6fbcd6"
 		# Initialize the SDK
 		africastalking.initialize(self.username, self.api_key)
 		# Get the SMS service
@@ -18,7 +18,7 @@ class SMS:
 		# Set the numbers 
 		recipients = [to]
 		# Set your message
-		meso = input("Enter message:  ")
+		meso = input("Enter message to Send:  ")
 		message = meso;
 		
 		print('SENDING ' + meso + ' TO ' + to)
